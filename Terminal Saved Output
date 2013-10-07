@@ -1,0 +1,992 @@
+Last login: Sat Oct  5 21:03:26 on console
+Loading ~/.bash_profile a shell script that runs in every new terminal you open
+Logged in as apprentice at dbc17.local
+~ :> cd desktop
+desktop [] :> mkdir simple_app
+desktop [] :> cd simple_app
+simple_app [] :> subl .
+simple_app [] :> gem install sinatra
+Successfully installed sinatra-1.4.3
+1 gem installed
+Installing ri documentation for sinatra-1.4.3...
+Installing RDoc documentation for sinatra-1.4.3...
+simple_app [] :> gem install thin
+Fetching: thin-1.6.0.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed thin-1.6.0
+1 gem installed
+Installing ri documentation for thin-1.6.0...
+Installing RDoc documentation for thin-1.6.0...
+simple_app [] :> gem install erb
+ERROR:  Could not find a valid gem 'erb' (>= 0) in any repository
+simple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+127.0.0.1 - - [06/Oct/2013 15:30:23] "GET / HTTP/1.1" 200 11 0.0192
+127.0.0.1 - - [06/Oct/2013 15:30:24] "GET /favicon.ico HTTP/1.1" 404 448 0.0008
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+Errno::ENOENT - No such file or directory - /Users/apprentice/Desktop/simple_app/views/index.erb:
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `open'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `read_template_file'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:68:in `block in initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:69:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:69:in `initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:837:in `new'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:837:in `block in compile_template'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:816:in `compile_template'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:797:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:657:in `erb'
+	app.rb:5:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 15:31:09] "GET /__sinatra__/500.png HTTP/1.1" 200 - 0.0201
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+Errno::ENOENT - No such file or directory - /Users/apprentice/Desktop/simple_app/views/index.erb:
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `open'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `read_template_file'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:68:in `block in initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:69:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:69:in `initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:837:in `new'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:837:in `block in compile_template'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:816:in `compile_template'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:797:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:657:in `erb'
+	app.rb:5:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 15:32:05] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0143
+Errno::ENOENT - No such file or directory - /Users/apprentice/Desktop/simple_app/views/index.erb:
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `open'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:91:in `read_template_file'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:68:in `block in initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:69:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:69:in `initialize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:837:in `new'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:837:in `block in compile_template'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:816:in `compile_template'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:797:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:657:in `erb'
+	app.rb:5:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 15:32:07] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0012
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+127.0.0.1 - - [06/Oct/2013 15:32:43] "GET / HTTP/1.1" 200 11 0.0034
+127.0.0.1 - - [06/Oct/2013 15:42:22] "GET / HTTP/1.1" 200 11 0.0019
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+NameError - uninitialized constant Coach:
+	app.rb:5:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 15:42:34] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0061
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+127.0.0.1 - - [06/Oct/2013 15:44:34] "GET / HTTP/1.1" 200 11 0.0116
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+127.0.0.1 - - [06/Oct/2013 15:44:57] "GET / HTTP/1.1" 200 11 0.0038
+127.0.0.1 - - [06/Oct/2013 15:44:59] "GET / HTTP/1.1" 200 11 0.0015
+^Csimple_app [] :> 
+simple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+127.0.0.1 - - [06/Oct/2013 15:45:41] "GET / HTTP/1.1" 200 43 0.0109
+^C^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+SyntaxError - /Users/apprentice/Desktop/simple_app/views/index.erb:1: syntax error, unexpected keyword_do_block
+@_out_buf = '';  @coaches.each |coach| do ; @_out_buf.concat " \n"
+                                         ^
+/Users/apprentice/Desktop/simple_app/views/index.erb:6: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/apprentice/Desktop/simple_app/views/index.erb:10: syntax error, unexpected keyword_end, expecting $end
+end;end;end;end
+               ^:
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `class_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `compile_template_method'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:240:in `compiled_method'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:169:in `evaluate'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:798:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:657:in `erb'
+	app.rb:7:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 15:51:49] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0044
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+SyntaxError - /Users/apprentice/Desktop/simple_app/views/index.erb:2: syntax error, unexpected keyword_do_block
+;  @coaches.each |coach| do ; @_out_buf.concat " \n"
+                           ^
+/Users/apprentice/Desktop/simple_app/views/index.erb:6: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/apprentice/Desktop/simple_app/views/index.erb:10: syntax error, unexpected keyword_end, expecting $end
+end;end;end;end
+               ^:
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `class_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `compile_template_method'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:240:in `compiled_method'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:169:in `evaluate'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:798:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:657:in `erb'
+	app.rb:7:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 15:53:20] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0051
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+127.0.0.1 - - [06/Oct/2013 15:53:52] "GET / HTTP/1.1" 200 58 0.0036
+^[[A^[[A^C^Csimple_app [] :> 
+simple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+SyntaxError - /Users/apprentice/Desktop/simple_app/views/index.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/apprentice/Desktop/simple_app/views/index.erb:14: syntax error, unexpected $end, expecting keyword_end
+end;end;end;end
+               ^:
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `class_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `compile_template_method'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:240:in `compiled_method'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:169:in `evaluate'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:798:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:657:in `erb'
+	app.rb:7:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 16:02:46] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0041
+127.0.0.1 - - [06/Oct/2013 16:03:18] "GET /login HTTP/1.1" 200 134 0.0022
+127.0.0.1 - - [06/Oct/2013 16:03:25] "POST /login HTTP/1.1" 404 443 0.0008
+127.0.0.1 - - [06/Oct/2013 16:03:25] "GET /__sinatra__/404.png HTTP/1.1" 200 - 0.0012
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:05:56] "GET /login HTTP/1.1" 200 134 0.0118
+{"session_id"=>"e9ffd30f44da7e750e0555e258d5dd601a85e55bf2ab6db51b7963b44078e899", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"06d28a48ab82cde957bcc3b2f8ef83dc2c572bcc656257561861030735fc1892"}
+127.0.0.1 - - [06/Oct/2013 16:06:08] "POST /login HTTP/1.1" 200 - 0.0023
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:08:27] "POST /login HTTP/1.1" 200 - 0.0032
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"fname"=>"sam"}
+127.0.0.1 - - [06/Oct/2013 16:08:46] "POST /login HTTP/1.1" 200 - 0.0114
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"fname"=>"sam"}
+127.0.0.1 - - [06/Oct/2013 16:09:33] "POST /login HTTP/1.1" 200 - 0.0113
+^C^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:09:57] "GET /login HTTP/1.1" 200 184 0.0038
+{"fname"=>"Sam", "lname"=>"Samskies"}
+127.0.0.1 - - [06/Oct/2013 16:10:05] "POST /login HTTP/1.1" 200 - 0.0015
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"splat"=>[], "captures"=>["testing"], "name"=>"testing"}
+127.0.0.1 - - [06/Oct/2013 16:13:28] "GET /testing HTTP/1.1" 200 - 0.0035
+^C^Csimple_app [] :> 
+simple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"splat"=>[], "captures"=>["sam", "samskies"], "firstname"=>"sam", "lastname"=>"samskies"}
+127.0.0.1 - - [06/Oct/2013 16:14:18] "GET /sam/samskies HTTP/1.1" 200 - 0.0031
+^C^Csimple_app [] :> 
+simple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"firstname"=>"sam", "lastname"=>"samskies", "city"=>"San Francisco"}
+127.0.0.1 - - [06/Oct/2013 16:15:34] "GET /?firstname=sam&lastname=samskies&city=San%20Francisco HTTP/1.1" 200 - 0.0032
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"session_id"=>"e9ffd30f44da7e750e0555e258d5dd601a85e55bf2ab6db51b7963b44078e899", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"06d28a48ab82cde957bcc3b2f8ef83dc2c572bcc656257561861030735fc1892"}
+127.0.0.1 - - [06/Oct/2013 16:19:11] "GET / HTTP/1.1" 200 59 0.0037
+127.0.0.1 - - [06/Oct/2013 16:19:25] "GET /login HTTP/1.1" 200 134 0.0018
+127.0.0.1 - - [06/Oct/2013 16:19:31] "POST /login HTTP/1.1" 303 - 0.0017
+{"session_id"=>"e9ffd30f44da7e750e0555e258d5dd601a85e55bf2ab6db51b7963b44078e899", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"06d28a48ab82cde957bcc3b2f8ef83dc2c572bcc656257561861030735fc1892", "username"=>"Sam"}
+127.0.0.1 - - [06/Oct/2013 16:19:31] "GET / HTTP/1.1" 200 59 0.0024
+{"session_id"=>"fbc9eb08531f8f41d19b1c6ad8a9e9f785a1b559b9ed93c00b167bfb48daca2e", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}}
+127.0.0.1 - - [06/Oct/2013 16:20:06] "GET / HTTP/1.1" 200 59 0.0025
+{"session_id"=>"fbc9eb08531f8f41d19b1c6ad8a9e9f785a1b559b9ed93c00b167bfb48daca2e", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}}
+127.0.0.1 -^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+SyntaxError - /Users/apprentice/Desktop/simple_app/views/index.erb:8: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/apprentice/Desktop/simple_app/views/index.erb:12: syntax error, unexpected $end, expecting keyword_end
+end;end;end;end
+               ^:
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `class_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `compile_template_method'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:240:in `compiled_method'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:169:in `evaluate'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:798:in `render'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:657:in `erb'
+	app.rb:10:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 16:26:18] "GET /__sinatra__/500.png HTTP/1.1" 200 - 0.0121
+^[[A^[[A^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:27:17] "GET / HTTP/1.1" 200 66 0.0040
+127.0.0.1 - - [06/Oct/2013 16:27:32] "GET / HTTP/1.1" 200 66 0.0026
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+nil
+127.0.0.1 - - [06/Oct/2013 16:28:08] "GET / HTTP/1.1" 200 66 0.0039
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:29:06] "GET / HTTP/1.1" 200 29 0.0041
+127.0.0.1 - - [06/Oct/2013 16:29:18] "GET /login HTTP/1.1" 200 134 0.0020
+127.0.0.1 - - [06/Oct/2013 16:29:22] "POST /login HTTP/1.1" 303 - 0.0016
+127.0.0.1 - - [06/Oct/2013 16:29:22] "GET / HTTP/1.1" 200 66 0.0024
+127.0.0.1 - - [06/Oct/2013 16:29:24] "GET / HTTP/1.1" 200 66 0.0023
+127.0.0.1 - - [06/Oct/2013 16:29:27] "GET / HTTP/1.1" 200 66 0.0021
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:35:09] "GET / HTTP/1.1" 200 159 0.0038
+127.0.0.1 - - [06/Oct/2013 16:35:47] "GET / HTTP/1.1" 200 95 0.0025
+127.0.0.1 - - [06/Oct/2013 16:35:51] "GET /logout HTTP/1.1" 302 - 0.0012
+127.0.0.1 - - [06/Oct/2013 16:35:51] "GET / HTTP/1.1" 200 95 0.0025
+^[[A^[[A^C^Csimple_app [] :> 
+simple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:36:43] "GET / HTTP/1.1" 200 95 0.0040
+127.0.0.1 - - [06/Oct/2013 16:36:45] "GET /logout HTTP/1.1" 302 - 0.0016
+127.0.0.1 - - [06/Oct/2013 16:36:45] "GET / HTTP/1.1" 200 95 0.0025
+127.0.0.1 - - [06/Oct/2013 16:36:47] "GET /logout HTTP/1.1" 302 - 0.0012
+127.0.0.1 - - [06/Oct/2013 16:36:47] "GET / HTTP/1.1" 200 95 0.0026
+127.0.0.1 - - [06/Oct/2013 16:37:04] "GET / HTTP/1.1" 200 95 0.0018
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:37:17] "GET / HTTP/1.1" 200 95 0.0037
+ArgumentError - wrong number of arguments (0 for 1):
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:104:in `delete'
+	app.rb:25:in `block in <main>'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1541:in `block in compile!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `[]'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (3 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:966:in `route_eval'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:950:in `block (2 levels) in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:987:in `block in process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:985:in `process_route'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:948:in `block in route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `each'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:947:in `route!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1059:in `block in dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1056:in `dispatch!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `block in call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `block in invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1041:in `invoke'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:882:in `call!'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:870:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:205:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:175:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:82:in `block in pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `catch'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/thin-1.6.0/lib/thin/connection.rb:80:in `pre_process'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `call'
+	/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/eventmachine-1.0.3/lib/eventmachine.rb:1037:in `block in spawn_threadpool'
+127.0.0.1 - - [06/Oct/2013 16:37:19] "GET /__sinatra__/500.png HTTP/1.1" 200 - 0.0032
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:37:43] "GET /logout HTTP/1.1" 302 - 0.0030
+127.0.0.1 - - [06/Oct/2013 16:37:43] "GET / HTTP/1.1" 200 29 0.0018
+127.0.0.1 - - [06/Oct/2013 16:37:45] "GET /login HTTP/1.1" 200 134 0.0027
+127.0.0.1 - - [06/Oct/2013 16:37:49] "POST /login HTTP/1.1" 303 - 0.0023
+127.0.0.1 - - [06/Oct/2013 16:37:49] "GET / HTTP/1.1" 200 95 0.0024
+127.0.0.1 - - [06/Oct/2013 16:37:50] "GET /logout HTTP/1.1" 302 - 0.0012
+127.0.0.1 - - [06/Oct/2013 16:37:50] "GET / HTTP/1.1" 200 29 0.0023
+127.0.0.1 - - [06/Oct/2013 16:37:51] "GET /login HTTP/1.1" 200 134 0.0026
+127.0.0.1 - - [06/Oct/2013 16:37:54] "POST /login HTTP/1.1" 303 - 0.0012
+127.0.0.1 - - [06/Oct/2013 16:37:54] "GET / HTTP/1.1" 200 95 0.0024
+127.0.0.1 - - [06/Oct/2013 16:37:56] "GET /logout HTTP/1.1" 302 - 0.0011
+127.0.0.1 - - [06/Oct/2013 16:37:56] "GET / HTTP/1.1" 200 29 0.0024
+127.0.0.1 - - [06/Oct/2013 16:38:01] "GET /login HTTP/1.1" 200 134 0.0020
+127.0.0.1 - - [06/Oct/2013 16:38:04] "POST /login HTTP/1.1" 303 - 0.0016
+127.0.0.1 - - [06/Oct/2013 16:38:04] "GET / HTTP/1.1" 200 95 0.0022
+127.0.0.1 - - [06/Oct/2013 16:38:14] "GET /logout HTTP/1.1" 302 - 0.0010
+127.0.0.1 - - [06/Oct/2013 16:38:14] "GET / HTTP/1.1" 200 29 0.0018
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:40:30] "GET / HTTP/1.1" 200 29 0.0040
+127.0.0.1 - - [06/Oct/2013 16:40:31] "GET / HTTP/1.1" 200 29 0.0024
+127.0.0.1 - - [06/Oct/2013 16:40:32] "GET /login HTTP/1.1" 200 134 0.0025
+127.0.0.1 - - [06/Oct/2013 16:40:34] "POST /login HTTP/1.1" 303 - 0.0016
+127.0.0.1 - - [06/Oct/2013 16:40:34] "GET / HTTP/1.1" 200 119 0.0025
+127.0.0.1 - - [06/Oct/2013 16:40:40] "GET /login HTTP/1.1" 200 134 0.0020
+127.0.0.1 - - [06/Oct/2013 16:40:41] "GET / HTTP/1.1" 200 119 0.0030
+127.0.0.1 - - [06/Oct/2013 16:40:43] "GET /logout HTTP/1.1" 302 - 0.0011
+127.0.0.1 - - [06/Oct/2013 16:40:43] "GET / HTTP/1.1" 200 29 0.0018
+127.0.0.1 - - [06/Oct/2013 16:40:45] "GET /login HTTP/1.1" 200 134 0.0019
+127.0.0.1 - - [06/Oct/2013 16:40:50] "POST /login HTTP/1.1" 303 - 0.0013
+127.0.0.1 - - [06/Oct/2013 16:40:50] "GET / HTTP/1.1" 200 119 0.0025
+127.0.0.1 - - [06/Oct/2013 16:40:53] "GET /logout HTTP/1.1" 302 - 0.0010
+127.0.0.1 - - [06/Oct/2013 16:40:53] "GET / HTTP/1.1" 200 29 0.0024
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:41:56] "GET / HTTP/1.1" 200 29 0.0036
+127.0.0.1 - - [06/Oct/2013 16:41:58] "GET /login HTTP/1.1" 200 134 0.0020
+127.0.0.1 - - [06/Oct/2013 16:42:01] "POST /login HTTP/1.1" 303 - 0.0023
+127.0.0.1 - - [06/Oct/2013 16:42:01] "GET / HTTP/1.1" 200 119 0.0027
+"BEFORE: #<Rack::Session::Abstract::SessionHash:0x007f919257dbb0>"
+"AFTER: #<Rack::Session::Abstract::SessionHash:0x007f919257dbb0>"
+127.0.0.1 - - [06/Oct/2013 16:42:03] "GET /logout HTTP/1.1" 302 - 0.0021
+127.0.0.1 - - [06/Oct/2013 16:42:03] "GET / HTTP/1.1" 200 29 0.0027
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:42:48] "GET /login HTTP/1.1" 200 134 0.0037
+127.0.0.1 - - [06/Oct/2013 16:42:51] "POST /login HTTP/1.1" 303 - 0.0017
+127.0.0.1 - - [06/Oct/2013 16:42:51] "GET / HTTP/1.1" 200 117 0.0022
+BEFORE
+{"session_id"=>"743f67bcf14ca4a595527705da1dec3eb198ee48fca1b83e8aca7f1db2acf1ba", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"b45d489b538e7c6ed09a4e86e5336d1e95cf70cc392f27610ff87f0706ccb48e", "username"=>"sa"}
+AFTER
+{}
+127.0.0.1 - - [06/Oct/2013 16:42:52] "GET /logout HTTP/1.1" 302 - 0.0023
+127.0.0.1 - - [06/Oct/2013 16:42:52] "GET / HTTP/1.1" 200 29 0.0023
+^C^Csimple_app [] :> 
+simple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:46:37] "GET / HTTP/1.1" 200 29 0.0040
+127.0.0.1 - - [06/Oct/2013 16:46:41] "GET /login HTTP/1.1" 200 134 0.0018
+{"fname"=>"Sam"}
+127.0.0.1 - - [06/Oct/2013 16:46:45] "POST /login HTTP/1.1" 303 - 0.0018
+127.0.0.1 - - [06/Oct/2013 16:46:45] "GET / HTTP/1.1" 200 118 0.0022
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{}
+127.0.0.1 - - [06/Oct/2013 16:47:10] "GET / HTTP/1.1" 200 118 0.0040
+{"name"=>"Sam"}
+127.0.0.1 - - [06/Oct/2013 16:47:29] "GET /?name=Sam HTTP/1.1" 200 118 0.0019
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 16:48:18] "GET /?name=Sam HTTP/1.1" 404 437 0.0015
+127.0.0.1 - - [06/Oct/2013 16:48:18] "GET /__sinatra__/404.png HTTP/1.1" 200 - 0.0074
+{"splat"=>[], "captures"=>["testing"], "name"=>"testing"}
+127.0.0.1 - - [06/Oct/2013 16:48:26] "GET /testing HTTP/1.1" 200 118 0.0030
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+127.0.0.1 - - [06/Oct/2013 17:04:15] "GET /testing HTTP/1.1" 404 444 0.0012
+127.0.0.1 - - [06/Oct/2013 17:04:15] "GET /__sinatra__/404.png HTTP/1.1" 200 - 0.0060
+127.0.0.1 - - [06/Oct/2013 17:04:16] "GET /testing HTTP/1.1" 404 444 0.0017
+127.0.0.1 - - [06/Oct/2013 17:04:16] "GET /__sinatra__/404.png HTTP/1.1" 200 - 0.0014
+127.0.0.1 - - [06/Oct/2013 17:04:19] "GET / HTTP/1.1" 200 29 0.0019
+127.0.0.1 - - [06/Oct/2013 17:04:20] "GET /login HTTP/1.1" 200 184 0.0031
+127.0.0.1 - - [06/Oct/2013 17:04:25] "POST /login HTTP/1.1" 303 - 0.0022
+127.0.0.1 - - [06/Oct/2013 17:04:25] "GET / HTTP/1.1" 200 147 0.0026
+^C^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"session_id"=>"743f67bcf14ca4a595527705da1dec3eb198ee48fca1b83e8aca7f1db2acf1ba", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"28451de75f0d9ae75874f6f069e00cf20fd3e728657bf9a3574cc8f137a95330", "username"=>"Sam", "user"=>{:fname=>"Gary", :lname=>"Tsai"}}
+127.0.0.1 - - [06/Oct/2013 17:05:07] "GET / HTTP/1.1" 200 147 0.0043
+{"session_id"=>"743f67bcf14ca4a595527705da1dec3eb198ee48fca1b83e8aca7f1db2acf1ba", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"28451de75f0d9ae75874f6f069e00cf20fd3e728657bf9a3574cc8f137a95330", "username"=>"Sam", "user"=>{:fname=>"Gary", :lname=>"Tsai"}}
+127.0.0.1 - - [06/Oct/2013 17:08:03] "GET / HTTP/1.1" 200 115 0.0026
+^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"session_id"=>"743f67bcf14ca4a595527705da1dec3eb198ee48fca1b83e8aca7f1db2acf1ba", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"28451de75f0d9ae75874f6f069e00cf20fd3e728657bf9a3574cc8f137a95330", "username"=>"Sam", "user"=>{:fname=>"Gary", :lname=>"Tsai"}}
+127.0.0.1 - - [06/Oct/2013 17:08:20] "GET / HTTP/1.1" 200 119 0.0128
+^C^Csimple_app [] :> ruby app.rb
+== Sinatra/1.4.3 has taken the stage on 4567 for development with backup from Thin
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.5.2/lib/rack/builder.rb:86:in `new'.
+
+{"session_id"=>"743f67bcf14ca4a595527705da1dec3eb198ee48fca1b83e8aca7f1db2acf1ba", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"28451de75f0d9ae75874f6f069e00cf20fd3e728657bf9a3574cc8f137a95330", "username"=>"Sam", "user"=>{:fname=>"Gary", :lname=>"Tsai"}}
+127.0.0.1 - - [06/Oct/2013 17:08:46] "GET / HTTP/1.1" 200 119 0.0040
+{"session_id"=>"743f67bcf14ca4a595527705da1dec3eb198ee48fca1b83e8aca7f1db2acf1ba", "tracking"=>{"HTTP_USER_AGENT"=>"9b45644f6d6dfaf90f337c063facb3f6cd1e303c", "HTTP_ACCEPT_ENCODING"=>"ed2b3ca90a4e723402367a1d17c8b28392842398", "HTTP_ACCEPT_LANGUAGE"=>"66eae971492938c2dcc2fb1ddc8d7ec3196037da"}, "csrf"=>"28451de75f0d9ae75874f6f069e00cf20fd3e728657bf9a3574cc8f137a95330", "username"=>"Sam", "user"=>{:fname=>"Gary", :lname=>"Tsai"}}
+127.0.0.1 - - [06/Oct/2013 17:09:09] "GET / HTTP/1.1" 200 125 0.0027
+
