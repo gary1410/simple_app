@@ -1,0 +1,9 @@
+<% if @current_user %>
+<h1>Welcome, <%=@fname%> <%=@lname%> !</h1>
+	<% @coaches.each do |coach| %> 
+		<h1><%= coach %></h1>
+	<% end %>
+<a href="/logout">Logout</a>
+<% else %>
+	<a href="/login">Login!</a>
+<% end %>
